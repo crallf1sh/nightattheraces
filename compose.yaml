@@ -1,0 +1,15 @@
+services:
+  night-at-the-races:
+    build: .
+    image: night-at-the-races:latest
+    ports:
+      - "3000:3000"
+    environment:
+      # Set this in a .env file on the server if desired.
+      # ADMIN_PASSWORD: change-me
+      PORT: 3000
+      DATABASE_FILE: /app/data/races.sqlite
+    volumes:
+      # This is the authoritative SQLite database. Back this folder up.
+      - ./event-data:/app/data
+    restart: unless-stopped
