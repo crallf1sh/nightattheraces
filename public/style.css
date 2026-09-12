@@ -50,3 +50,10 @@
   letter-spacing:.12em;
   text-transform:uppercase;
 }
+
+
+/* Fix screen card text color */
+.screen .card,
+.screen .card .card-name{
+  color:#002d62 !important;
+}
