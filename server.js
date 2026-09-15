@@ -7,6 +7,7 @@ const multer = require('multer');
 const XLSX = require('xlsx');
 const { Server } = require('socket.io');
 
+
 const PORT = Number(process.env.PORT || 3000);
 const databaseFile = process.env.DATABASE_FILE || path.join(__dirname, 'data', 'races.sqlite');
 require('fs').mkdirSync(path.dirname(databaseFile), { recursive: true });
