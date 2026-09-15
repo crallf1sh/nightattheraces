@@ -702,13 +702,21 @@ function eliminate(
     ensure(s);
 
   /*
-   * Store snapshot BEFORE modifying state.
+   * Store the state BEFORE modifying it so the most recent
+   * elimination can be undone.
    *
-   * This stays in database/admin state but is deliberately
-   * excluded from publicState().
+   * IMPORTANT:
+   * Never include the previous undoSnapshot inside the new
+   * snapshot. Otherwise each elimination recursively embeds
+   * every previous snapshot and state size can grow dramatically.
+   *
+   * We intentionally support ONE level of undo.
    */
   const before =
-    JSON.stringify(s);
+    JSON.stringify({
+      ...s,
+      undoSnapshot: null
+    });
 
   const p =
     s.participants.find(
