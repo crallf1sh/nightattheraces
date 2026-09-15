@@ -1,0 +1,201 @@
+:root{--navy:#002d62;--navy2:#001a3b;--cyan:#00b5e2;--ink:#10233c;--paper:#f4f8fc;--red:#a6192e;font-family:Montserrat,Arial,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink)}button,.button,select,input{font:inherit;border-radius:8px;border:1px solid #9db1c8;padding:.65rem .8rem}button,.button{background:var(--navy);color:#fff;font-weight:800;text-decoration:none;display:inline-block;cursor:pointer;border-color:var(--navy)}button:hover,.button:hover{filter:brightness(1.12)}.secondary{background:#fff;color:var(--navy)}.danger{background:var(--red)!important;border-color:var(--red)!important}button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}header{background:#fff;display:flex;align-items:center;gap:1rem;padding:1rem 2rem;border-bottom:3px solid var(--cyan);box-shadow:0 2px 10px #001c3a18}header img{width:135px;max-height:44px}h1,h2,h3,p{margin-top:0}header h1{margin-bottom:.2rem;text-transform:uppercase;letter-spacing:.055em}.status{margin-left:auto;display:flex;align-items:center;gap:.5rem}.status span{font-size:.8rem;font-weight:700}.status span:before{content:'● ';color:#14ba65}.eyebrow{font-size:.65rem!important;letter-spacing:.16em;font-weight:800;color:#3580a9;margin-bottom:.45rem!important}.welcome{max-width:760px;margin:4rem auto;padding:2.5rem;background:#fff;border-radius:14px;border-top:5px solid var(--cyan);box-shadow:0 12px 35px #002d6218}.import,.settings{display:flex;flex-wrap:wrap;gap:.8rem;align-items:end}.import label,.settings label,.console label,.restore{display:grid;gap:.3rem;font-weight:700}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:1rem;padding:1rem}.board,.console,.lower article{background:#fff;border-radius:12px;padding:1.25rem;box-shadow:0 3px 14px #002d6210}.board{border-top:4px solid var(--cyan)}.sectionhead{display:flex;justify-content:space-between;gap:1rem}.sectionhead h2:after{content:'LIVE BOARD';display:block;color:#3680a8;font-size:.58rem;letter-spacing:.16em;margin-top:.4rem}.search{display:grid;gap:.25rem;font-weight:700}.button-stack{display:flex;gap:.5rem;align-items:start;flex-wrap:wrap}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:.65rem;margin-top:1rem}.card{position:relative;overflow:hidden;background:linear-gradient(145deg,#fff,#f0f8ff);border:2px solid #d2e9fa;border-radius:10px;padding:1.1rem .7rem;min-height:94px;display:grid;place-items:center;text-align:center;font-weight:800;font-size:1rem;box-shadow:0 2px 8px #002d6211;transition:transform .18s,box-shadow .18s}.card:before{content:'';position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,#00b5e2,#1769aa)}.card:hover{transform:translateY(-3px);box-shadow:0 10px 21px #002d6225}.card .actions{position:absolute;right:5px;bottom:5px;display:flex;gap:3px}.tiny{padding:.2rem .45rem;font-size:.9rem}.console{background:linear-gradient(180deg,#062c5c,#001b3d);color:#fff;border-top:4px solid #00b5e2;box-shadow:0 14px 32px #002d6240;font-size:.86rem}.console h2,.console h3{color:#bcefff}.console .eyebrow{color:#75dbff}.console dl{display:grid;grid-template-columns:1fr auto;gap:.45rem;margin:0}.console dt{font-weight:700}.console dd{margin:0;text-align:right}.console hr{border-color:#4ba5d055}.muted{color:#62758d;font-size:.8rem}.console .muted{color:#b5cde0}.lower{padding:0 1rem 1rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.lower article{border-top:3px solid #b7e9fb;min-width:0}.history{max-height:250px;overflow:auto;font-size:.78rem}.history div{padding:.45rem 0;border-bottom:1px solid #e3ebf4}.history time{color:#63758b}.lower iframe{border:0;width:100%;height:190px;border-radius:7px}.restore{display:inline-grid;margin:.8rem 0}.restore input{max-width:190px}dialog{border:0;border-radius:12px;box-shadow:0 20px 55px #001c3a88;max-width:480px}dialog::backdrop{background:#001b3c99}menu{padding:0;display:flex;gap:.5rem;justify-content:flex-end}#toast{position:fixed;bottom:1rem;right:1rem;background:#10233c;color:#fff;padding:.8rem 1rem;border-radius:8px;opacity:0;transition:.2s}.show{opacity:1!important}.serve-notice{position:fixed;z-index:999;inset:0;display:grid;place-items:center;padding:2rem;background:#002d62;color:#fff;font-size:1.25rem;text-align:center}
+.screen{background:radial-gradient(circle at 35% 0,#075a9c 0,#002d62 45%,#001a3b 100%);color:#fff;min-height:100vh}.screen:before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.32;background:repeating-linear-gradient(115deg,transparent 0 42px,#4edaff12 43px 44px),radial-gradient(circle at 75% 13%,#00b5e255,transparent 21%)}.screen header,.screen main{position:relative;z-index:1}.screen header{background:#002d6244;color:#fff;box-shadow:none;border-bottom:1px solid #55d8ff55}.screen header h1{font-size:clamp(1.4rem,3vw,3rem);letter-spacing:.08em;text-shadow:0 3px 12px #001124}.screen header h1 span{font-size:.45em;vertical-align:middle}.screen header p{margin:0;color:#bcefff}.screen #remain{margin-left:auto;padding:.55rem 1rem;border:1px solid #7ceaff88;border-radius:999px;background:#001d45aa;font-size:clamp(1rem,2.3vw,2.2rem);font-weight:800}.screen main{display:grid;grid-template-columns:1fr minmax(220px,20vw);gap:1rem;padding:1.2rem}.screen .cards{grid-template-columns:repeat(auto-fill,minmax(min(210px,23vw),1fr));align-content:start}.screen .card{font-size:clamp(1rem,2vw,2rem);min-height:clamp(86px,13vh,160px);border:0;box-shadow:0 8px 25px #001a3b66}.screen aside{background:#001e48a6;border:1px solid #55d8ff55;border-radius:12px;padding:1rem;box-shadow:inset 0 1px #6fe2ff55,0 20px 50px #00142e88}.screen aside h2{font-size:1rem;color:#9eeeff}.screen aside .eyebrow{color:#75dbff}.recent{padding:.8rem 0;border-bottom:1px solid #77ddff44;font-weight:700}.recent small{display:block;color:#a5cde6;font-size:.68rem;margin-top:.25rem}#reveal{position:fixed;inset:0;background:radial-gradient(circle,#087fc1,#002d62 55%,#001737);display:grid;place-content:center;text-align:center;z-index:5;animation:reveal .35s ease-out}#reveal .burst{font-size:8rem;color:#fff;text-shadow:0 0 50px var(--cyan)}#reveal p{font-size:clamp(1.3rem,3vw,3rem);font-weight:700;color:#bcefff;margin:0}#reveal h2{font-size:clamp(3rem,9vw,9rem);margin:.2em 0}#reveal small{color:#c3eefa}@keyframes reveal{from{transform:scale(1.08);opacity:0}to{transform:scale(1);opacity:1}}.busted{animation:bust .75s ease forwards}@keyframes bust{50%{transform:scale(1.15) rotate(-2deg);background:#00b5e2}100%{transform:scale(.2) rotate(10deg);opacity:0}}@media(max-width:850px){.workspace{grid-template-columns:1fr}.lower{grid-template-columns:1fr}.screen main{grid-template-columns:1fr}.screen aside{display:none}.sectionhead{flex-direction:column}header{padding:1rem}.status{margin-left:0;flex-wrap:wrap}}
+
+
+/* V2 screen-functionality patch only — preserves V1 sizing/styles */
+#reveal[hidden]{display:none}
+
+.screen{
+  height:100vh;
+  overflow:hidden;
+}
+
+.screen main{
+  height:calc(100vh - 78px);
+  overflow:hidden;
+}
+
+.screen main>section{
+  min-width:0;
+  overflow:hidden;
+}
+
+.screen aside{
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  overflow:hidden;
+}
+
+.elimination-feed{
+  overflow-y:auto;
+  min-height:0;
+  flex:1;
+  padding-right:.35rem;
+  scrollbar-gutter:stable;
+}
+
+.round-group{
+  margin-bottom:1rem;
+}
+
+.round-group h3{
+  position:sticky;
+  top:0;
+  background:#001e48;
+  padding:.45rem 0;
+  margin:0;
+  color:#75dbff;
+  font-size:.75rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+
+/* Fix screen card text color */
+.screen .card,
+.screen .card .card-name{
+  color:#002d62 !important;
+}
+
+/* V3 big-screen card layout patch
+   - Equal, non-overlapping cards at high participant counts
+   - Names centered vertically/horizontally
+   - Final 6 and below use large bounded cards instead of full-height cards
+*/
+
+/* The participant section and grid must be allowed to size inside the viewport. */
+.screen main > section{
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+}
+
+.screen .cards{
+  flex:1;
+  min-height:0;
+  margin-top:1rem;
+
+  /* Override the V1 auto-fill/min-height behavior on the big screen. */
+  display:grid;
+  grid-template-columns:repeat(var(--screen-cols, 4), minmax(0,1fr));
+  grid-template-rows:repeat(var(--screen-rows, 1), minmax(0,1fr));
+  gap:.55rem;
+  align-content:stretch;
+}
+
+/* Every screen card owns exactly one grid cell. */
+.screen .card{
+  width:100%;
+  height:100%;
+  min-width:0;
+  min-height:0;
+  margin:0;
+  padding:.55rem .45rem;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  line-height:1.08;
+  text-align:center;
+  overflow:hidden;
+}
+
+/* Keep the name itself centered and prevent odd baseline positioning. */
+.screen .card .card-name{
+  width:100%;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  line-height:1.08;
+}
+
+/*
+  CSS chooses the grid from the number of cards present.
+  This keeps cards close to square while ensuring every row gets equal space.
+*/
+.screen .cards:has(.card:nth-child(97)){
+  --screen-cols:12;
+  --screen-rows:10;
+}
+
+.screen .cards:not(:has(.card:nth-child(97))):has(.card:nth-child(73)){
+  --screen-cols:11;
+  --screen-rows:9;
+}
+
+.screen .cards:not(:has(.card:nth-child(73))):has(.card:nth-child(55)){
+  --screen-cols:10;
+  --screen-rows:8;
+}
+
+.screen .cards:not(:has(.card:nth-child(55))):has(.card:nth-child(43)){
+  --screen-cols:9;
+  --screen-rows:6;
+}
+
+.screen .cards:not(:has(.card:nth-child(43))):has(.card:nth-child(31)){
+  --screen-cols:8;
+  --screen-rows:6;
+}
+
+.screen .cards:not(:has(.card:nth-child(31))):has(.card:nth-child(21)){
+  --screen-cols:7;
+  --screen-rows:5;
+}
+
+.screen .cards:not(:has(.card:nth-child(21))):has(.card:nth-child(13)){
+  --screen-cols:6;
+  --screen-rows:4;
+}
+
+.screen .cards:not(:has(.card:nth-child(13))):has(.card:nth-child(7)){
+  --screen-cols:4;
+  --screen-rows:3;
+}
+
+/* Final 6: stop stretching cards to fill all available vertical space. */
+.screen .cards:not(:has(.card:nth-child(7))){
+  flex:0 1 auto;
+  grid-template-columns:repeat(3, minmax(180px, 300px));
+  grid-template-rows:none;
+  grid-auto-rows:clamp(150px, 23vh, 220px);
+  justify-content:center;
+  align-content:start;
+  gap:1rem;
+}
+
+/* Final 3: one strong row of three, still bounded vertically. */
+.screen .cards:not(:has(.card:nth-child(4))){
+  grid-template-columns:repeat(3, minmax(200px, 320px));
+  grid-auto-rows:clamp(180px, 28vh, 250px);
+}
+
+/* Final 2 */
+.screen .cards:not(:has(.card:nth-child(3))){
+  grid-template-columns:repeat(2, minmax(220px, 340px));
+}
+
+/* Final 1 */
+.screen .cards:not(:has(.card:nth-child(2))){
+  grid-template-columns:minmax(240px, 380px);
+}
+
+/* Keep the mobile fallback from inheriting the desktop fixed grid. */
+@media(max-width:850px){
+  .screen .cards,
+  .screen .cards:not(:has(.card:nth-child(7))),
+  .screen .cards:not(:has(.card:nth-child(4))),
+  .screen .cards:not(:has(.card:nth-child(3))),
+  .screen .cards:not(:has(.card:nth-child(2))){
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(155px,1fr));
+    grid-template-rows:none;
+    grid-auto-rows:minmax(86px,auto);
+    height:auto;
+  }
+}
+
